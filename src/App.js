@@ -5,8 +5,12 @@ import LocalMarket from "./pages/LocalMarket";
 import PostPage from "./pages/PostPage";
 import PricesPage from "./pages/PricesPage";
 
+import Upperpart from './Upperpart'
+import Upper2 from './Upper2'
+
 function App() {
   return (
+    <div>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -24,6 +28,9 @@ function App() {
         <Route path="/posts" element={<PostPage />} />
       </Routes>
     </BrowserRouter>
+        <Upperpart/>
+        <Upper2 />
+    </div>
   );
 }
 
