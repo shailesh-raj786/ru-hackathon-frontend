@@ -7,9 +7,17 @@ import PostPage from "./pages/PostPage";
 import PricesPage from "./pages/PricesPage";
 
 
+
+import Upperpart from './Upperpart'
+import Upper2 from './Upper2'
+
+
 function App() {
   return (
+    <div>
     <BrowserRouter>
+        <Upperpart/>
+        <Upper2 />
       <Routes>
         <Route path="/" element={<LandingPage />} />
       </Routes>
@@ -29,6 +37,7 @@ function App() {
         <Route path="/blogs" element={<BlogPage />} />
       </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 
