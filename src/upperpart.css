@@ -3,6 +3,8 @@
     direction: row;
     background-color: #BBD6B8;
   justify-content: space-between;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 .logo{
     /* border-radius: 5px; */

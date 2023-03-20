@@ -4,20 +4,20 @@ function upper2() {
   return (
     <div className="upper2">
       <div className="sidediv"></div>
-      <div className="links">
-        <a href="/">Home</a>
+      <div >
+        <a href="/" className="links">Home</a>
       </div>
-      <div className="links">
-        <a href="/auth">SignUp/SignIn</a>
+      <div >
+        <a href="/auth" className="links">SignUp/SignIn</a>
       </div>
-      <div className="links">
-        <a href="/prices">Crop Prices</a>
+      <div >
+        <a href="/prices" className="links">Crop Prices</a>
       </div>
-      <div className="links">
-        <a href="/posts">Posts</a>
+      <div >
+        <a href="/posts"className="links" >Posts</a>
       </div>
-      <div className="links">
-        <a href="/market">Market</a>
+      <div >
+        <a href="/market" className="links">Market</a>
       </div>
 
       <div className="sidediv"></div>
