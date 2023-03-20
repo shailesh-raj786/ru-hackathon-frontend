@@ -12,6 +12,8 @@ function App() {
   return (
     <div>
     <BrowserRouter>
+        <Upperpart/>
+        <Upper2 />
       <Routes>
         <Route path="/" element={<LandingPage />} />
       </Routes>
@@ -28,8 +30,6 @@ function App() {
         <Route path="/posts" element={<PostPage />} />
       </Routes>
     </BrowserRouter>
-        <Upperpart/>
-        <Upper2 />
     </div>
   );
 }
