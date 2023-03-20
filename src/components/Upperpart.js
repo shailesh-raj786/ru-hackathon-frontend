@@ -4,6 +4,7 @@ function Upperpart() {
     <div className="upperpart">
       <div className="logo">
         <img
+          alt="xyz"
           src="https://tse4.mm.bing.net/th?id=OIP.xnEDJEITrJLY-cvsVPNPsgHaE8&pid=Api&P=0"
           className="image"
         />
@@ -20,18 +21,21 @@ function Upperpart() {
       </div>
       <div className="iconsparent">
         <img
+          alt="xyz"
           src="https://img.icons8.com/glyph-neue/1x/picture.png"
           className="icons"
         />
       </div>
       <div className="iconsparent">
         <img
+          alt="xyz"
           src="https://img.icons8.com/glyph-neue/1x/picture.png"
           className="icons"
         />
       </div>
       <div className="iconsparent">
         <img
+          alt="xyz"
           src="https://img.icons8.com/glyph-neue/1x/picture.png"
           className="icons"
         />
