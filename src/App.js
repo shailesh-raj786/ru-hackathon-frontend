@@ -1,12 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthPage from "./pages/AuthPage";
+import BlogPage from "./pages/BlogPage";
 import LandingPage from "./pages/LandingPage";
 import LocalMarket from "./pages/LocalMarket";
 import PostPage from "./pages/PostPage";
 import PricesPage from "./pages/PricesPage";
 
+
+
 import Upperpart from './Upperpart'
 import Upper2 from './Upper2'
+
 
 function App() {
   return (
@@ -28,6 +32,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/posts" element={<PostPage />} />
+      </Routes>
+      <Routes>
+        <Route path="/blogs" element={<BlogPage />} />
       </Routes>
     </BrowserRouter>
     </div>
