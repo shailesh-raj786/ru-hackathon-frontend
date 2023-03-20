@@ -19,6 +19,9 @@ function upper2() {
       <div className="links">
         <a href="/market">Market</a>
       </div>
+      <div className="links">
+        <a href="/blogs">Blogs</a>
+      </div>
 
       <div className="sidediv"></div>
     </div>
