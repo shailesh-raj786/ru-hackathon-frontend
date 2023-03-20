@@ -1,8 +1,12 @@
 import React from 'react'
+import Upper3 from '../Upper3'
+import "./pages.css"
 
 function LandingPage() {
   return (
-    <div>LandingPage</div>
+    <div className='landingpage'>
+      <Upper3 />
+    </div>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
-
+import {Login,Signup} from "./Login"
 function AuthPage() {
   return (
-    <div>AuthPage</div>
+    <div>
+      <Signup/>
+      <Login/>
+    </div>
   )
 }
 
