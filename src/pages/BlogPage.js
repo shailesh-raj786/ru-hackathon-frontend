@@ -3,8 +3,8 @@ import { useState } from "react";
 const BlogPage = () => {
   const blogPosts = [
     {
-      title: "Enhancing Agriculture Production",
-      body: `Agriculture is a vital sector for the global economy, providing food and raw materials for the world's population. However, farming has traditionally been a labor-intensive industry, with farmers relying on their experience and knowledge to grow crops and raise livestock. With the advancement of technology, agriculture has undergone significant changes in recent years, with farmers now using modern tools and techniques to increase efficiency, productivity, and profitability.
+      title: "ENHANCING FARMING TECHNIQUES \n",
+      body: `\nAgriculture is a vital sector for the global economy, providing food and raw materials for the world's population. However, farming has traditionally been a labor-intensive industry, with farmers relying on their experience and knowledge to grow crops and raise livestock. With the advancement of technology, agriculture has undergone significant changes in recent years, with farmers now using modern tools and techniques to increase efficiency, productivity, and profitability.
 
     There are many ways in which technology can enhance agriculture and make farming more sustainable, profitable, and efficient. One of the most important technological innovations for agriculture is precision farming, which involves the use of GPS, sensors, and other tools to gather data about soil conditions, weather patterns, and crop growth. This information can be used to optimize planting, fertilization, irrigation, and harvesting, resulting in higher yields and lower costs.
     
@@ -19,8 +19,8 @@ const BlogPage = () => {
     },
 
     {
-      title: "Smart Farming Techniques",
-      body: `Smart farming, also known as precision agriculture, is an innovative approach to farming that uses technology to optimize crop production and minimize waste. By integrating sensors, data analytics, and machine learning, farmers can make more informed decisions about planting, irrigation, fertilization, and pest control, resulting in higher yields and improved efficiency.
+      title: "SMART FARMING TECHNIQUES \n",
+      body: `\nSmart farming, also known as precision agriculture, is an innovative approach to farming that uses technology to optimize crop production and minimize waste. By integrating sensors, data analytics, and machine learning, farmers can make more informed decisions about planting, irrigation, fertilization, and pest control, resulting in higher yields and improved efficiency.
 
     Here are some of the smart farming techniques that farmers can use to improve their operations:
     
@@ -41,8 +41,8 @@ const BlogPage = () => {
     },
 
     {
-      title: "Digital Technology in Farming",
-      body: `In today's digital age, technology has revolutionized almost every industry, and farming is no exception. Digital technology is transforming the agricultural industry by making it more efficient, productive, and sustainable. By leveraging digital tools, farmers can optimize crop yields, reduce waste, and better manage resources. Here are some of the digital technologies that farmers can use to enhance their operations:
+      title: "DIGITAL TECHNOLOGY FOR FARMING \n",
+      body: `\nIn today's digital age, technology has revolutionized almost every industry, and farming is no exception. Digital technology is transforming the agricultural industry by making it more efficient, productive, and sustainable. By leveraging digital tools, farmers can optimize crop yields, reduce waste, and better manage resources. Here are some of the digital technologies that farmers can use to enhance their operations:
 
     Farm Management Software: Farm management software provides a platform for farmers to plan, monitor and control their farming operations. This software helps farmers in tasks such as tracking farm inputs, managing expenses, scheduling tasks and generating reports. It also enables farmers to keep track of their farm data and analyze it to make informed decisions.
     
@@ -61,8 +61,8 @@ const BlogPage = () => {
     },
 
     {
-      title: "Drone Technology for Farming",
-      body: `Farming has been a crucial sector in our society since ancient times, providing food and raw materials for various industries. However, with the world's growing population and the demand for food increasing, there is a need for more efficient and productive farming methods. Drone technology has emerged as a potential solution for enhancing agricultural productivity, and its applications in farming are rapidly growing.
+      title: "DRONE TECHNOLOGY FOR FARMING \n",
+      body: `\nFarming has been a crucial sector in our society since ancient times, providing food and raw materials for various industries. However, with the world's growing population and the demand for food increasing, there is a need for more efficient and productive farming methods. Drone technology has emerged as a potential solution for enhancing agricultural productivity, and its applications in farming are rapidly growing.
 
     Drones are unmanned aerial vehicles (UAVs) that can be remotely controlled or fly autonomously. They can be equipped with cameras, sensors, and other imaging tools to capture high-resolution images and data about crops and fields. This information can be analyzed using advanced software and machine learning algorithms to provide valuable insights into crop health, soil moisture levels, nutrient deficiencies, and pest infestations.
     
@@ -80,8 +80,8 @@ const BlogPage = () => {
       //   imgUrl: ,
     },
     {
-      title: "Solar Powered Irrigation System",
-      body: `As the world continues to face challenges with climate change and environmental degradation, there is an increasing need to explore sustainable solutions that can help mitigate these problems. One such solution is the use of solar-powered irrigation systems, which can provide farmers with a reliable source of energy to power their irrigation systems while also reducing greenhouse gas emissions.
+      title: "SOLAR POWERED IRRIGATION SYSTEM \n",
+      body: `\nAs the world continues to face challenges with climate change and environmental degradation, there is an increasing need to explore sustainable solutions that can help mitigate these problems. One such solution is the use of solar-powered irrigation systems, which can provide farmers with a reliable source of energy to power their irrigation systems while also reducing greenhouse gas emissions.
 
         Solar-powered irrigation systems are becoming increasingly popular, especially in areas where access to grid electricity is limited or non-existent. These systems use solar panels to capture energy from the sun, which is then used to power water pumps, sprinklers, and other irrigation equipment.
         
@@ -99,8 +99,8 @@ const BlogPage = () => {
       //  imgUrl: ,
     },
     {
-      title: "Organic Farming",
-      body: `Organic farming is an agricultural method that relies on natural processes and inputs to grow crops and raise livestock. It is a holistic approach to farming that takes into account the health of the soil, the well-being of animals, and the overall health of the environment. Organic farming practices aim to promote biodiversity, reduce the use of synthetic fertilizers and pesticides, and conserve resources.
+     title: "WHAT IS ORGANIC FARM \n",
+      body: ` \nOrganic farming is an agricultural method that relies on natural processes and inputs to grow crops and raise livestock. It is a holistic approach to farming that takes into account the health of the soil, the well-being of animals, and the overall health of the environment. Organic farming practices aim to promote biodiversity, reduce the use of synthetic fertilizers and pesticides, and conserve resources.
 
         Organic farming has become increasingly popular in recent years as consumers become more aware of the health and environmental benefits of organic produce. Organic farming is also seen as a way to address some of the environmental challenges facing agriculture, such as soil degradation, water pollution, and loss of biodiversity.
         
@@ -119,8 +119,25 @@ const BlogPage = () => {
       //  imgUrl: ,
     },
     {
-      title: "Organic Farming vs Sustainable farming",
-      body: ` Agriculture is the backbone of the world's economy, providing food and other essential resources. The methods used to grow crops and raise livestock have undergone significant changes over time, driven by technological advancements, market demands, and environmental concerns. Two concepts that have gained considerable attention in recent years are organic and sustainable agriculture. While both aim to produce food in an eco-friendly manner, they differ in their approaches.
+      title: "ORGANIC FARMING VS SUSTAINABLE FARMING \n",
+      body: `\n Agriculture is the backbone of the world's economy, providing food and other essential resources. The methods used to grow crops and raise livestock have undergone significant changes over time, driven by technological advancements, market demands, and environmental concerns. Two concepts that have gained considerable attention in recent years are organic and sustainable agriculture. While both aim to produce food in an eco-friendly manner, they differ in their approaches.
+
+        Organic agriculture refers to a farming system that avoids the use of synthetic fertilizers, pesticides, and genetically modified organisms (GMOs). Instead, it relies on natural resources like compost, crop rotation, and biological pest control to enhance soil fertility and crop yields. Organic farming is regulated by strict standards that cover everything from soil management to animal welfare. In general, organic farmers prioritize the health and well-being of the ecosystem over maximizing productivity.
+        
+        On the other hand, sustainable agriculture focuses on maintaining the balance between social, economic, and environmental factors to ensure long-term food production. It considers the broader impact of agriculture on the community, soil health, and biodiversity. Sustainable farmers strive to conserve natural resources like water and soil and reduce waste and pollution. They also emphasize the importance of ethical labor practices and economic viability.
+        
+        While both organic and sustainable agriculture share some similarities, they have distinct differences. One of the key differences is their focus. Organic farming prioritizes soil fertility and biodiversity, while sustainable agriculture emphasizes environmental, social, and economic factors. Organic farming is also more restrictive in terms of the use of synthetic inputs, while sustainable agriculture is more flexible, recognizing the need for innovation and progress.
+        
+        Another difference between the two is their scalability. Organic farming is often associated with small-scale, niche farming, while sustainable agriculture can be practiced on a larger scale. Sustainable agriculture allows for a more diverse range of practices and technologies, including conventional practices that are more suitable for certain crops and regions.
+        
+        In conclusion, both organic and sustainable agriculture offer different approaches to farming that address the challenges of food production in a changing world. While organic farming has gained popularity among consumers seeking healthy and eco-friendly products, sustainable agriculture offers a more comprehensive approach that considers the broader impact of agriculture on society and the environment. Ultimately, the choice between the two depends on the farmer's goals,
+        
+        resources, and preferences. Regardless of the approach, the ultimate goal is to produce food that is healthy, nutritious, and sustainable. `,
+      //  imgUrl: ,
+    },
+    {
+      title: "ORGANIC FARMING VS SUSTAINABLE FARMING \n",
+      body: `\n Agriculture is the backbone of the world's economy, providing food and other essential resources. The methods used to grow crops and raise livestock have undergone significant changes over time, driven by technological advancements, market demands, and environmental concerns. Two concepts that have gained considerable attention in recent years are organic and sustainable agriculture. While both aim to produce food in an eco-friendly manner, they differ in their approaches.
 
         Organic agriculture refers to a farming system that avoids the use of synthetic fertilizers, pesticides, and genetically modified organisms (GMOs). Instead, it relies on natural resources like compost, crop rotation, and biological pest control to enhance soil fertility and crop yields. Organic farming is regulated by strict standards that cover everything from soil management to animal welfare. In general, organic farmers prioritize the health and well-being of the ecosystem over maximizing productivity.
         
@@ -136,14 +153,40 @@ const BlogPage = () => {
       //  imgUrl: ,
     },
   ];
+  
+  const mytopic = {
+    color: "White",
+    fontSize : "20px"
+   
+  }
+
+  const myStyle = {
+    color: "white",
+    backgroundColor: "lightgreen",
+    padding: "20px",
+    fontFamily: "Sans-Serif"
+  };
+
+  const search_style = {
+    padding : "10px",
+    backgroundColor: "lightgrey",
+    margin : "2px"
+    
+  };
 
   const [searchText, setSearchText] = useState("");
   const [inblogs, setInblogs] = useState(blogPosts);
 
+
   const list = inblogs.map((post, index) => {
     return (
-      <div>
-        {post.title}, {post.body}, <br />
+      <div style = {myStyle}>
+        <div style = {mytopic}>
+        {post.title}
+        </div> 
+        <div>
+        {post.body}
+          </div>
       </div>
     );
   });
@@ -164,12 +207,12 @@ const BlogPage = () => {
   const search = () => {};
 
   return (
-    <div>
+    <div style={search_style}>
       <input
         type="text"
         id="message"
         name="message"
-        placeholder="search"
+        placeholder="Search Blog Topic"
         onChange={handleChange}
         value={searchText}
       />
