@@ -1,5 +1,5 @@
 import React from 'react'
-import Upper3 from '../Upper3'
+import Upper3 from '../components/Upper3'
 import "./pages.css"
 
 function LandingPage() {

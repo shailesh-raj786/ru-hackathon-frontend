@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
-import './Login.css';
+import React, { useState } from "react";
+import "./Login.css";
+import axios from "axios";
 
 function Login() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setmessage] = useState("");
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
@@ -13,9 +15,15 @@ function Login() {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // handle login logic
+    console.log(`${username} and ${password} `);
+    const response = await axios.post("https://ru-rv.cyclic.app/auth/signIn", {
+      username: username,
+      password: password,
+    });
+    console.log(response);
+    setmessage(response.data.message);
   };
 
   return (
@@ -43,31 +51,46 @@ function Login() {
           />
         </div>
         <button type="submit">Sign In</button>
+        <div>{message}</div>
       </form>
     </div>
   );
 }
 
 function Signup() {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setmessage] = useState("");
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
   };
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // handle signup logic
+    if (password !== confirmPassword) {
+      console.log("password doesnot match");
+      setmessage("password doesnot match");
+      return;
+    }
+    const response = await axios.post(
+      "https://ru-rv.cyclic.app/auth/createUser",
+      {
+        username: username,
+        password: password,
+      }
+    );
+    console.log(response);
+    setmessage(response.data.message);
   };
 
   return (
@@ -85,16 +108,6 @@ function Signup() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={handleEmailChange}
-            required
-          />
-        </div>
-        <div className="form-group">
           <label htmlFor="password">Password:</label>
           <input
             type="password"
@@ -104,7 +117,18 @@ function Signup() {
             required
           />
         </div>
+        <div className="form-group">
+          <label htmlFor="email">ConfirmPassword:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            value={confirmPassword}
+            onChange={handleConfirmPasswordChange}
+            required
+          />
+        </div>
         <button type="submit">Sign Up</button>
+        <div>{message}</div>
       </form>
     </div>
   );
